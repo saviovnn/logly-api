@@ -132,6 +132,22 @@ http://localhost:3000/doc
 
 Lá você pode testar os endpoints diretamente e ver todos os schemas de validação.
 
+## ⚡ Testes de Performance
+
+Para testar a performance da API, você pode usar o `autocannon`:
+
+```bash
+bunx autocannon -c 100 -d 10 -m POST -b @test-payload.json http://localhost:3000/api/v1/logs
+```
+
+Este comando executa:
+- `-c 100`: 100 conexões simultâneas
+- `-d 10`: Duração de 10 segundos
+- `-m POST`: Método HTTP POST
+- `-b @test-payload.json`: Body do request usando o arquivo `test-payload.json`
+
+Certifique-se de que o servidor está rodando antes de executar o teste.
+
 ## 🛠️ Desenvolvimento
 
 Este projeto foi criado usando `bun init` e aproveita todas as vantagens do ecossistema Bun:

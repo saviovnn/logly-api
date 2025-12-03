@@ -1,0 +1,31 @@
+[
+  {
+    "timestamp": "2025-12-02T20:00:00.000Z",
+    "level": "INFO",
+    "message": "Inicialização do servidor concluída.",
+    "service": "auth-service",
+    "environment": "production"
+  },
+  {
+    "timestamp": "2025-12-02T20:00:05.123Z",
+    "level": "WARN",
+    "message": "Estoque de produto P123 baixo.",
+    "service": "inventory-service",
+    "environment": "production"
+  },
+  {
+    "timestamp": "2025-12-02T20:00:10.555Z",
+    "level": "ERROR",
+    "message": "Falha de comunicação com gateway de pagamento.",
+    "service": "payment-gateway",
+    "environment": "production",
+    "traceId": "a8c9b1d2e3f4g5h6i7j8k9l0"
+  },
+  {
+    "timestamp": "2025-12-02T20:00:15.000Z",
+    "level": "INFO",
+    "message": "Processo de backup iniciado.",
+    "service": "storage-service",
+    "environment": "production"
+  }
+]
