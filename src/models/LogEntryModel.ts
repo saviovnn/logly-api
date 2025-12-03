@@ -19,6 +19,7 @@ const LogEntrySchema = new mongoose.Schema(
       metaField: 'metadata', 
       granularity: 'hours', 
     },
+    expireAfterSeconds: 2592000,
   }
 );
 
